@@ -1,3 +1,14 @@
+/*Pagina default*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 /*Logo del ipn*/
 #icoNavIpn{
     width: 80px;
@@ -15,4 +26,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.border_1{
+    border-radius: 8px;
+}
+
+li.indicator{
+    height: 5px !important;
+    background-color: #fff !important;
+}
+
+/*Diseño del tamaño de los tabs*/
+.mainContent{
+    height: calc(100vh - 112px);
+}
+
+.mainTabs{
+    height: 100%;
 }

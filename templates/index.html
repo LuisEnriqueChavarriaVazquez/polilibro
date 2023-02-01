@@ -5,93 +5,94 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Página de ejemplo</title>
-  <!-- <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet"> -->
   <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../static/css/bulma.css">
-  <link rel="stylesheet" href="../static/css/bulmaCustomized.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/ownStyles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script defer src="../static/js/activateComponentsMaterialize.js"></script>
 
 
 </head>
 
 <body>
-  <nav class="navbar navbarOwn shadow-shorter is-transparent ipn_color">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <div id="icoNavIpn"></div>
-      </a>
-    </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start navbar-startOwn">
-        <div class="navbar-item button is-rounded shadow-shorterHoverable">Inicio</div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-grey-lighter">Unidades</a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item has-text-black" href="">Unidad 1</a>
-            <a class="navbar-item has-text-black" href="">Unidad 2</a>
-            <a class="navbar-item has-text-black" href="">Unidad 3</a>
-            <a class="navbar-item has-text-black" href="">Unidad 4</a>
-            <a class="navbar-item has-text-black" href="">Unidad 5</a>
+  <section>
+
+    <nav>
+      <div class="nav-wrapper light-blue darken-4">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+            class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Inicio<i class="material-icons right">home</i></a></li>
+          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Manual de usuario<i class="material-icons right">help</i></a></li>
+          <li><a class='dropdown-trigger btn waves-effect waves-light border_1 black-text white' href='#'
+              data-target='dropdown1'>Unidades<i class="material-icons right">group_work</i></a></li>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!" class="black-text">Unidad 1</a></li>
+            <li><a href="#!" class="black-text">Unidad 2</a></li>
+            <li><a href="#!" class="black-text">Unidad 3</a></li>
+            <li><a href="#!" class="black-text">Unidad 4</a></li>
+            <li><a href="#!" class="black-text">Unidad 5</a></li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+
+    <ul id="mobile-demo" class="sidenav">
+      <li>
+        <div class="user-view" style="height: 150px;">
+          <div class="background" style="height: 150px;">
+            <img src="../static/img/escom_background.jpg" width="100%">
           </div>
+          <a href="#"><span class="white-text name">Versión 1.0</span></a>
+          <a href="#"><span class="white-text email">Instituto Politécnino Nacional</span></a>
         </div>
-      </div>
-      <div class="navbar-end">
-        <a class="navbar-item" href="index.html">
-          <div id="icoNavEscom"></div>
-        </a>
-      </div>
-    </div>
-  </nav>
+      </li>
+      <li><a href="#!"><i class="material-icons">home</i>Inicio</a></li>
+      <li><a href="#!"><i class="material-icons">menu_book</i>Polilibro</a></li>
+      <li><a href="#!"><i class="material-icons">looks_one</i>Unidad 1</a></li>
+      <li><a href="#!"><i class="material-icons">looks_two</i>Unidad 2</a></li>
+      <li><a href="#!"><i class="material-icons">looks_3</i>Unidad 3</a></li>
+      <li><a href="#!"><i class="material-icons">looks_4</i>Unidad 4</a></li>
+      <li><a href="#!"><i class="material-icons">looks_5</i>Unidad 5</a></li>
+    </ul>
 
-  <section class="sidenav">
-    
+    <!--Menu para los contenidos en tiempo real-->
+    <ul id="tabs-swipe-demo" class="tabs light-blue darken-4">
+      <li class="tab col s3"><a class="white-text active" href="#test-swipe-1">Bienvenida</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-2">Manual de usuario</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-3">Unidad de competencia</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-4">Metodología</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-5">Evaluación de los aprendizajes</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-6">Contactos</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-7">Requerimientos</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-8">Fuentes</a></li>
+    </ul>
+  </section>
+
+  <!--Contenidos principales de la página-->
+  <section class="mainContent">
+    <div id="test-swipe-1" class="mainTabs col s12 grey blue-grey lighten-5">Test 1</div>
+    <div id="test-swipe-2" class="mainTabs col s12 grey blue-grey lighten-5">Test 2</div>
+    <div id="test-swipe-3" class="mainTabs col s12 grey blue-grey lighten-5">Test 3</div>
+    <div id="test-swipe-4" class="mainTabs col s12 grey blue-grey lighten-5">Test 1</div>
+    <div id="test-swipe-5" class="mainTabs col s12 grey blue-grey lighten-5">Test 2</div>
+    <div id="test-swipe-6" class="mainTabs col s12 grey blue-grey lighten-5">Test 3</div>
+    <div id="test-swipe-7" class="mainTabs col s12 grey blue-grey lighten-5">Test 1</div>
+    <div id="test-swipe-8" class="mainTabs col s12 grey blue-grey lighten-5">Test 2</div>
   </section>
 
 
-  <main class="flex w-full h-screen">
-    <aside class="w-80 h-screen bg-gray shadow-md w-fulll hidden sm:block">
-      <div class="flex flex-col justify-between h-screen p-4 bg-gray-800">
-        <div class="text-sm">
-          <div class="bg-gray-700 text-blue-300 p-2 rounded mt-2 cursor-pointer">Bienvenida</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Manual de usuario</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Unidad de competencia</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Metodología</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Evaluación de los aprendizajes</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Contactos</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Requerimientos</div>
-          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
-            Fuentes</div>
-        </div>
-      </div>
-    </aside>
 
-    <section class="w-full p-4">
-      <div class="w-full h-64 border-dashed border-4 p-4 text-md">Dashboard</div>
-    </section>
 
-  </main>
-
-  <footer class="grid grid-cols-2">
-    <div>
-      <img src="../static/img/cc.png" alt="Logo de la creative commons">
-    </div>
-    <div>
-      <p class="bg-white text-gray-900 underline font-serif text-9xl font-bold">Recurso Didáctico Digital: métodos de
-        evaluación de proyectos de inversión de la UA Finanzas Empresariales por M. en A. Eduardo Rodríguez Flores, M.
-        en C. Josefina Hernández Jaime & Dra. Yasmín Ivette Jiménez Galán se distribuye bajo una Licencia Creative
-        Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
-        Basada en una obra en https://website_de_ejemplo
-      </p>
-    </div>
-  </footer>
 </body>
 
 </html>
