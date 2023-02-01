@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Test</title>
-    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Página de ejemplo</title>
+  <!-- <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet"> -->
+  <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/bulmaCustomized.css">
+  <link rel="stylesheet" href="../static/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
 </head>
 
 <body>
-    <header class="w-full bg-gray-800 p-4 flex justify-between items-center">
-        <nav class="flex items-center">
-          <img class="w-7 h-7" src="https://www.solarwinds.com/-/media/solarwinds/swdcv2/licensed-products/service-desk/integrations/sd-integrations-logo-jira.ashx?rev=701fbaa7f8ac4ae08e0406c8984c43e7&hash=75D4F04DE99B88DE7B2C4193F0616F1F" />
-          <div class="text-white text-xs hidden sm:block ml-2">
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer">Inicio</a>
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Unidad 1</a>
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Unidad 2</a>
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Unidad 3</a>
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Unidad 4</a>
-            <a href="#" class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Unidad 5</a>
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../static/img/ipn_color.webp" alt="Instituto Politécnico Nacional">
+      </a>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="">Inicio</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Unidades</a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="">Unidad 1</a>
+            <a class="navbar-item" href="">Unidad 2</a>
+            <a class="navbar-item" href="">Unidad 3</a>
+            <a class="navbar-item" href="">Unidad 4</a>
+            <a class="navbar-item" href="">Unidad 5</a>
           </div>
-        </nav>
-      </header>
-      
-      
-      <main class="flex w-full h-screen">
-      <aside class="w-80 h-screen bg-gray shadow-md w-fulll hidden sm:block">
-        <div class="flex flex-col justify-between h-screen p-4 bg-gray-800">
-            <div class="text-sm">
-              <div class="bg-gray-700 text-blue-300 p-2 rounded mt-2 cursor-pointer">Bienvenida</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Manual de usuario</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Unidad de competencia</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Metodología</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Evaluación de los aprendizajes</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Contactos</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Requerimientos</div>
-              <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">Fuentes</div>
-            </div>
         </div>
-      </aside>
-      
-      <section class="w-full p-4">
-        <div class="w-full h-64 border-dashed border-4 p-4 text-md">Dashboard</div>
-        </section>
-      
-      </main>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="flex w-full h-screen">
+    <aside class="w-80 h-screen bg-gray shadow-md w-fulll hidden sm:block">
+      <div class="flex flex-col justify-between h-screen p-4 bg-gray-800">
+        <div class="text-sm">
+          <div class="bg-gray-700 text-blue-300 p-2 rounded mt-2 cursor-pointer">Bienvenida</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Manual de usuario</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Unidad de competencia</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Metodología</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Evaluación de los aprendizajes</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Contactos</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Requerimientos</div>
+          <div class="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-gray-700 hover:text-blue-300">
+            Fuentes</div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="w-full p-4">
+      <div class="w-full h-64 border-dashed border-4 p-4 text-md">Dashboard</div>
+    </section>
+
+  </main>
+
+  <footer class="grid grid-cols-2">
+    <div>
+      <img src="../static/img/cc.png" alt="Logo de la creative commons">
+    </div>
+    <div>
+      <p class="bg-white text-gray-900 underline font-serif text-9xl font-bold">Recurso Didáctico Digital: métodos de
+        evaluación de proyectos de inversión de la UA Finanzas Empresariales por M. en A. Eduardo Rodríguez Flores, M.
+        en C. Josefina Hernández Jaime & Dra. Yasmín Ivette Jiménez Galán se distribuye bajo una Licencia Creative
+        Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+        Basada en una obra en https://website_de_ejemplo
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
