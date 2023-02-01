@@ -7,37 +7,47 @@
   <title>Página de ejemplo</title>
   <!-- <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet"> -->
   <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../static/css/bulmaCustomized.css">
   <link rel="stylesheet" href="../static/css/bulma.css">
+  <link rel="stylesheet" href="../static/css/bulmaCustomized.css">
+  <link rel="stylesheet" href="../static/css/ownStyles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 
 </head>
 
 <body>
-  <nav class="navbar is-transparent">
+  <nav class="navbar navbarOwn shadow-shorter is-transparent ipn_color">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="../static/img/ipn_color.webp" alt="Instituto Politécnico Nacional">
+      <a class="navbar-item" href="index.html">
+        <div id="icoNavIpn"></div>
       </a>
     </div>
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="">Inicio</a>
+      <div class="navbar-start navbar-startOwn">
+        <div class="navbar-item button is-rounded shadow-shorterHoverable">Inicio</div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Unidades</a>
+          <a class="navbar-link has-text-grey-lighter">Unidades</a>
           <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="">Unidad 1</a>
-            <a class="navbar-item" href="">Unidad 2</a>
-            <a class="navbar-item" href="">Unidad 3</a>
-            <a class="navbar-item" href="">Unidad 4</a>
-            <a class="navbar-item" href="">Unidad 5</a>
+            <a class="navbar-item has-text-black" href="">Unidad 1</a>
+            <a class="navbar-item has-text-black" href="">Unidad 2</a>
+            <a class="navbar-item has-text-black" href="">Unidad 3</a>
+            <a class="navbar-item has-text-black" href="">Unidad 4</a>
+            <a class="navbar-item has-text-black" href="">Unidad 5</a>
           </div>
         </div>
       </div>
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">
+          <div id="icoNavEscom"></div>
+        </a>
+      </div>
     </div>
   </nav>
+
+  <section class="sidenav">
+    
+  </section>
 
 
   <main class="flex w-full h-screen">

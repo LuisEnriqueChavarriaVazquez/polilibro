@@ -1,4 +1,52 @@
+/*1rem vale 16px*/
+
 /*Colors*/
-.ipn_color{
-    
+.ipn_color {
+    background-color: #720638;
+}
+
+/*Navbar customized*/
+.navbarOwn {
+    height: 6rem;
+}
+
+.navbar-startOwn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Shadows*/
+.shadow-shorter {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 6px 8px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.shadow-longer {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09),
+        0 4px 2px rgba(0, 0, 0, 0.09),
+        0 8px 4px rgba(0, 0, 0, 0.09),
+        0 16px 8px rgba(0, 0, 0, 0.09),
+        0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+.shadow-shorterHoverable {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 6px 8px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+    transition: all .2s ease;
+}
+
+.shadow-shorterHoverable:hover {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09),
+        0 4px 2px rgba(0, 0, 0, 0.09),
+        0 8px 4px rgba(0, 0, 0, 0.09),
+        0 16px 8px rgba(0, 0, 0, 0.09),
+        0 32px 16px rgba(0, 0, 0, 0.09);
 }
