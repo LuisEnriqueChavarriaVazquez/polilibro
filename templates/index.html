@@ -33,6 +33,9 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script defer src="../static/js/activateComponentsMaterialize.js"></script>
 
+  <!--Scripts propios-->
+  <script defer src="../static/js/hideSuperiorNav.js"></script>
+  <script defer src="../static/js/tabSticky.js"></script>
 
 </head>
 
@@ -40,15 +43,15 @@
 
   <section>
     <!--Navbar superior-->
-    <div class="nav-superior">
+    <div class="nav-superior" id="nav-superior">
       <div id="icoNavIpn"></div>
       <div class="titleNavIpnContainer">
         <p class="titleNavIpn white-text">Polilibro Académico de Finanzas Empresariales</p>
       </div>
       <div id="icoNavEscom"></div>
     </div>
-    <div class="hidenav-superior waves-effect waves-light">
-      <i class="material-icons white-text">expand_less</i>
+    <div id="expandButton" class="hidenav-superior waves-effect waves-light">
+      <i id="expandIcon" class="material-icons white-text">expand_less</i>
     </div>
     <!--Navbar principal-->
     <nav>
