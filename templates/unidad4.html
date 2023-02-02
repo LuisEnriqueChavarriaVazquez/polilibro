@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Unidad 3</title>
+    <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="../static/fonts/roboto.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ownStyles.css">
+
+    <!--Componentes personalizados-->
+    <link rel="stylesheet" href="../static/css/shadowsCustomized.css">
+    <link rel="stylesheet" href="../static/css/bordersCustomized.css">
+    <link rel="stylesheet" href="../static/css/scrollBarCustomized.css">
+    <link rel="stylesheet" href="../static/css/footerCustomized.css">
+    <link rel="stylesheet" href="../static/css/botonPoliLibro.css">
+    <link rel="stylesheet" href="../static/css/defaultImage.css">
+    <link rel="stylesheet" href="../static/css/textosCustomized.css">
+    <link rel="stylesheet" href="../static/css/navCustomized.css">
+    <link rel="stylesheet" href="../static/css/tabsCustomized.css">
+    <link rel="stylesheet" href="../static/css/cardsCustomized.css">
+    <link rel="stylesheet" href="../static/css/menuLateralCustomized.css">
+
+    <!--Colores de la unidad-->
+    <link rel="stylesheet" href="../static/css/unidad4Colors.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="../static/js/activateComponentsMaterialize.js"></script>
+    <script defer src="../static/js/menuLateralUnidad1RememberState.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="../static/js/hideSuperiorNav.js"></script>
+    <script defer src="../static/js/toggleMenuLateralUnity.js"></script>
+    <script defer src="../static/js/menuSticky.js"></script>
+    <script defer src="../static/js/alternarVistas.js"></script>
+
+</head>
+
+<body>
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior" id="nav-superior">
+            <div id="icoNavIpn"></div>
+            <div class="titleNavIpnContainer">
+                <p class="titleNavIpn white-text">Polilibro Académico de Finanzas Empresariales</p>
+            </div>
+            <div id="icoNavEscom"></div>
+        </div>
+        <div id="expandButton" class="hidenav-superior waves-effect waves-light">
+            <i id="expandIcon" class="material-icons white-text">expand_less</i>
+        </div>
+        <!--Navbar principal-->
+        <nav id="menuStickyUnity">
+            <div class="nav-wrapper teal darken-4" id="menuIconUnity">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons"
+                        id="menuIconUnityContent">close</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a id="buttonList" class='btn waves-effect waves-light border1 teal-text text-darken-4 white'>Lista<i
+                                class="material-icons right">view_list</i></a></li>
+                    <li><a id="buttonGrid" class='btn waves-effect waves-light border1 teal-text text-darken-4 white'>Cuadricula<i
+                                class="material-icons right">grid_view</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="fullUnity blue-grey lighten-4">
+        <!--Contenidos principales de la unidad-->
+        <section id="lateralUnityMenuBackOne"
+            class="lateralUnityMenuBackOne menuLateralWidthShow teal lighten-4">
+            <section id="lateralUnityMenuBackTwo"
+                class="lateralUnityMenuBackTwo menuLateralWidthShow teal lighten-3">
+                <section id="lateralUnityMenuBackThree"
+                    class="lateralUnityMenuBackThree menuLateralWidthShow teal lighten-2">
+                    <section id="lateralUnityMenuBackFour"
+                        class="lateralUnityMenuBackFour menuLateralWidthShow teal lighten-1">
+                        <section id="lateralUnityMenu" class="lateralUnityMenu white">
+                            <div id="lateralUnityMenuSectionContainer" class="lateralUnityMenuSectionContainer">
+                                <p contador="1" class="rememberStateUnit1 mainSectionMenu leftBorder">1. Sección A</p>
+                                <p contador="2" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">1.1 Sección A.1</p>
+                                <p contador="3" class="rememberStateUnit1 mainSectionMenu leftBorder">2. Sección B</p>
+                                <p contador="4" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">2.1 Sección B.1</p>
+                                <p contador="5" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">2.2 Sección B.2</p>
+                                <p contador="6" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">2.3 Sección B.3</p>
+                                <p contador="7" class="rememberStateUnit1 mainSectionMenu leftBorder">3. Sección C</p>
+                                <p contador="8" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.1 Sección C.1</p>
+                                <p contador="9" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.2 Sección C.2</p>
+                                <p contador="10" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.3 Sección C.3</p>
+                                <p contador="11" class="rememberStateUnit1 mainSectionMenu leftBorder">3. Sección C</p>
+                                <p contador="12" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.1 Sección C.1</p>
+                                <p contador="13" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.2 Sección C.2</p>
+                                <p contador="14" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.3 Sección C.3</p>
+                                <p contador="15" class="rememberStateUnit1 mainSectionMenu leftBorder">3. Sección C</p>
+                                <p contador="16" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.1 Sección C.1</p>
+                                <p contador="17" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.2 Sección C.2</p>
+                                <p contador="18" class="rememberStateUnit1 secondarySectionMenu leftBorderSecondary">3.3 Sección C.3</p>
+                                <hr>
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                    <i class="material-icons">auto_stories</i>
+                                    <p>Material de apoyo</p>
+                                </div>
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                    <i class="material-icons">diversity_2</i>
+                                    <p>Cierre de unidad temática</p>
+                                </div>
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                    <i class="material-icons">quiz</i>
+                                    <p>Evaluación</p>
+                                </div>
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                    <i class="material-icons">format_quote</i>
+                                    <p>Referencias</p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!--Contenidos principales de texto-->
+        <section id="lateralUnityContent" class="lateralUnityContentList blue-grey lighten-4">
+            <div class="cardDesign white shadow2 border1">
+                <p class="textoTitulo">Texto título 1</p>
+                <p class="textoStandar">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                </p>
+                <div class="defaultImage">
+                    <div class="defaultImageContent">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="cardDesign white shadow2 border1">
+                <p class="textoTitulo">Texto título 2</p>
+                <p class="textoStandar">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                </p>
+                <div class="defaultImage">
+                    <div class="defaultImageContent">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="cardDesign white shadow2 border1">
+                <p class="textoTitulo">Texto título 3</p>
+                <p class="textoStandar">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                </p>
+                <div class="defaultImage">
+                    <div class="defaultImageContent">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footerDesign blue-grey lighten-3">
+        <div class="footerContainerOne">
+            <p class="textoFooter">
+                Recurso Didáctico Digital Unidad X: métodos de evaluación de proyectos de inversión de la UA Finanzas
+                Empresariales por M. en A. Eduardo Rodríguez Flores, M. en C. Josefina Hernández Jaime & Dra. Yasmín
+                Ivette
+                Jiménez Galán se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0
+                Internacional.
+            </p>
+            <a href="https://link_ejemplo_pagina"
+                class="footerLink textoFooter blue-grey lighten-4 shadow2 border1 blue-text text-darken-2">
+                Repositorio de la obra https://link_ejemplo_pagina.
+            </a>
+            <div class="iconCreativeContainer">
+                <div class="iconCreative"></div>
+            </div>
+        </div>
+        <div class="footerContainerTwo">
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Manual<i
+                    class="material-icons right">help</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Requerimientos<i
+                    class="material-icons right">build</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Contacto<i
+                    class="material-icons right">alternate_email</i></a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

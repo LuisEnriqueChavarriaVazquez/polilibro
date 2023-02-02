@@ -1,0 +1,56 @@
+.nav-superior{
+    background-color: #613107 !important;
+}
+
+.hidenav-superior{
+    background-color: #b15b10 !important;
+}
+
+.footerDesign{
+    border-bottom: #b15b10 30px solid !important;
+}
+
+.leftBorder{
+    border-left: #b15b10 10px solid !important;
+    transition: all .2s ease;
+    font-weight: 600;
+}
+
+.leftBorderSecondary{
+    border-left: #f88119 10px solid !important;
+    transition: all .2s ease;
+}
+
+.leftBorder:hover, .leftBorderSecondary:hover{
+    background-color: rgb(202, 202, 202);
+    border-left: #b15b10 20px solid !important;
+}
+
+.leftBorderOn{
+    border-left: #b15b10 10px solid !important;
+    background-color: rgb(209, 209, 209);
+    font-weight: 700;
+    transition: all .1s ease;
+}
+
+/*Cards de la opciones para el menu*/
+.cardOpcionesMenuLateral{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 19px 10px;
+}
+
+.cardOpcionesMenuLateral i{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOpcionesMenuLateral p{
+    width: 100%;
+}
