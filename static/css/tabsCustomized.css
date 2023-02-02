@@ -1,0 +1,14 @@
+/*Diseño del tamaño de los tabs*/
+.mainContent{
+    height: auto;
+}
+
+.mainTabs{
+    max-height: 550vh;
+    min-height: calc(100vh - 112px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px 20px;
+}

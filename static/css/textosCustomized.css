@@ -1,0 +1,49 @@
+/*Textos*/
+.textoStandar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: justify;
+}
+
+@media (max-width: 800px) {
+	.textoStandar{
+        font-size: 1.1rem;
+    }
+}
+
+.textoFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.textoTitulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 800px) {
+	.textoTitulo{
+        font-size: 1.9rem;
+        font-weight: 500;
+    }
+}
+
+.textoList{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.titleNavIpn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}

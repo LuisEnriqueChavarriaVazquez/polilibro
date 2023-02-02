@@ -1,0 +1,77 @@
+/*Logo del ipn*/
+#icoNavIpn{
+    width: 100%;
+    height: 65px;
+    background-image: url('../img/ipn_blanco.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#icoNavEscom{
+    width: 100%;
+    height: 65px;
+    background-image: url('../img/escom_blanco.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.titleNavIpnContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-superior{
+    background-color: #003964;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+@media (max-width: 800px) {
+    .nav-superior{
+        height: 60px;
+    }
+
+    #icoNavIpn{
+        width: 100%;
+        height: 35px;
+    }
+    
+    #icoNavEscom{
+        width: 100%;
+        height: 35px;
+    }
+
+    .titleNavIpn{
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.hidenav-superior{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00345c;
+}
+
+.hidenav-superior > i{
+    font-size: 2rem;
+}
+
+
+li.indicator{
+    height: 5px !important;
+    background-color: #fff !important;
+}
