@@ -9,3 +9,48 @@
 .footerDesign{
     border-bottom: #631b05 30px solid !important;
 }
+
+.leftBorder{
+    border-left: #631b05 10px solid !important;
+    transition: all .2s ease;
+    font-weight: 600;
+}
+
+.leftBorderSecondary{
+    border-left: #d43200 10px solid !important;
+    transition: all .2s ease;
+}
+
+.leftBorder:hover, .leftBorderSecondary:hover{
+    background-color: rgb(202, 202, 202);
+    border-left: #631b05 20px solid !important;
+}
+
+.leftBorderOn{
+    border-left: #631b05 10px solid !important;
+    background-color: rgb(209, 209, 209);
+    font-weight: 800;
+    transition: all .4s ease;
+}
+
+/*Cards de la opciones para el menu*/
+.cardOpcionesMenuLateral{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 19px 10px;
+}
+
+.cardOpcionesMenuLateral i{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOpcionesMenuLateral p{
+    width: 100%;
+}

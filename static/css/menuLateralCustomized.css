@@ -1,44 +1,100 @@
-.fullUnity{
+.fullUnity {
     display: grid;
-    grid-template-columns: .6fr 2fr;
+    grid-template-columns: .8fr 2fr;
+    grid-template-rows: auto;
+    transition: all .4s ease;
+}
+
+.fullUnityComplete {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
     grid-template-rows: auto;
 }
 
 /*Menu lateral*/
-.menuLateralWidthShow{
+.menuLateralWidthShow {
     width: 100%;
 }
 
-.menuLateralWidthHide{
+.menuLateralWidthHide {
     width: 0%;
 }
 
-.lateralUnityMenuBackOne{
+.lateralUnityMenuBackOne {
     height: 100vh;
     transition: all .6s ease-in-out;
 }
 
-.lateralUnityMenuBackTwo{
+.lateralUnityMenuBackTwo {
     height: 100vh;
     transition: all .5s ease-in-out;
 }
 
-.lateralUnityMenuBackThree{
+.lateralUnityMenuBackThree {
     height: 100vh;
     transition: all .4s ease-in-out;
 }
 
-.lateralUnityMenuBackFour{
+.lateralUnityMenuBackFour {
     height: 100vh;
     transition: all .3s ease-in-out;
 }
 
-.lateralUnityMenu{
+.lateralUnityMenu {
     height: 100vh;
     transition: all .2s ease-in-out;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    padding: 0px;
+}
+
+/*Menu lateral opciones de cada sección*/
+.lateralUnityMenuSectionContainer{
+    overflow-y: scroll;
+    height: calc(100vh);
+}
+
+.mainSectionMenu{
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.secondarySectionMenu{
+    margin: 0 0 0 0;
+    height: 30px;
+    padding: 10px 5px 10px 20px;
+    font-size: 1.1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*Menu de contenido*/
-.lateralUnityContent{
+.lateralUnityContentList{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    padding: 40px;
+}
 
+.lateralUnityContentSquare{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    padding: 40px;
+}
+
+#lateralUnityContent{
+    overflow-y: scroll;
+    height: calc(100vh);
 }

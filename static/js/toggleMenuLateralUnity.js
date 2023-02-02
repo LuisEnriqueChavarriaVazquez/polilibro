@@ -10,10 +10,14 @@ let lateralUnityMenuBackThree = document.getElementById('lateralUnityMenuBackThr
 let lateralUnityMenuBackFour = document.getElementById('lateralUnityMenuBackFour');
 let lateralUnityMenu = document.getElementById('lateralUnityMenu');
 
+//Contenedor principal derecho
+let fullUnity = document.getElementsByClassName('fullUnity');
+let lateralUnityMenuSectionContainer = document.getElementById('lateralUnityMenuSectionContainer');
+
 //Click al boton
 menuIconUnity.addEventListener('click', () => {
-    if(menuIconUnityContent.textContent === 'menu'){
-        menuIconUnityContent.textContent = 'close';
+    if(menuIconUnityContent.textContent !== 'menu'){
+        menuIconUnityContent.textContent = 'menu';
         lateralUnityMenuBackOne.classList.add('menuLateralWidthHide');
         lateralUnityMenuBackTwo.classList.add('menuLateralWidthHide');
         lateralUnityMenuBackThree.classList.add('menuLateralWidthHide');
@@ -25,8 +29,11 @@ menuIconUnity.addEventListener('click', () => {
         lateralUnityMenuBackThree.classList.remove('menuLateralWidthShow');
         lateralUnityMenuBackFour.classList.remove('menuLateralWidthShow');
         lateralUnityMenu.classList.remove('menuLateralWidthShow');
+
+        fullUnity[0].classList.add('fullUnityComplete');
+        lateralUnityMenuSectionContainer.setAttribute('display', 'none')
     }else{
-        menuIconUnityContent.textContent = 'menu';
+        menuIconUnityContent.textContent = 'close';
         lateralUnityMenuBackOne.classList.remove('menuLateralWidthHide');
         lateralUnityMenuBackTwo.classList.remove('menuLateralWidthHide');
         lateralUnityMenuBackThree.classList.remove('menuLateralWidthHide');
@@ -38,5 +45,7 @@ menuIconUnity.addEventListener('click', () => {
         lateralUnityMenuBackThree.classList.add('menuLateralWidthShow');
         lateralUnityMenuBackFour.classList.add('menuLateralWidthShow');
         lateralUnityMenu.classList.add('menuLateralWidthShow');
+
+        fullUnity[0].classList.remove('fullUnityComplete');
     }
 })

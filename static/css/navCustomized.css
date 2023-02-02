@@ -45,7 +45,11 @@
 }
 
 #tabs-swipe-demo{
-    transition: all .4s ease !important;
+    transition: all 1s ease !important;
+}
+
+#menuStickyUnity{
+    transition: all 1s ease !important;
 }
 
 .tabsFixed{
