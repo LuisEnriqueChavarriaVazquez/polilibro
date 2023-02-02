@@ -1,0 +1,19 @@
+.border1{
+    border-radius: 10px;
+}
+
+.border2{
+    border-radius: 15px;
+}
+
+.border3{
+    border-radius: 25px;
+}
+
+.border4{
+    border-radius: 50px;
+}
+
+.border5{
+    border-radius: 100%;
+}

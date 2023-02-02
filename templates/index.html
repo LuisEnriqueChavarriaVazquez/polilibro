@@ -7,10 +7,17 @@
   <title>Página de ejemplo</title>
   <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
 
+  <!--Fonts-->
+  <link rel="stylesheet" href="../static/fonts/roboto.css">
+
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/ownStyles.css">
+
+  <!--Componentes personalizados-->
+  <link rel="stylesheet" href="../static/css/shadowsCustomized.css">
+  <link rel="stylesheet" href="../static/css/bordersCustomized.css">
 
   <!-- Compiled and minified JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -24,21 +31,30 @@
 <body>
 
   <section>
-
+    <!--Navbar superior-->
+    <div class="nav-superior">
+      <div id="icoNavIpn"></div>
+      <div class="titleNavIpnContainer">
+        <p class="titleNavIpn white-text">Polilibro Académico de Finanzas Empresariales</p>
+      </div>
+      <div id="icoNavEscom"></div>
+    </div>
+    <div class="hidenav-superior waves-effect waves-light">
+      <i class="material-icons white-text">expand_less</i>
+    </div>
+    <!--Navbar principal-->
     <nav>
       <div class="nav-wrapper light-blue darken-4">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
             class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Inicio<i
-                class="material-icons right">home</i></a></li>
-          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Manual<i
+          <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='#'>Manual<i
                 class="material-icons right">help</i></a></li>
-          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Requerimientos<i
+          <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='#'>Requerimientos<i
                 class="material-icons right">build</i></a></li>
-          <li><a class='btn waves-effect waves-light border_1 white-text blue darken-4' href='#'>Contacto<i
+          <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='#'>Contacto<i
                 class="material-icons right">alternate_email</i></a></li>
-          <li><a class='dropdown-trigger btn waves-effect waves-light border_1 black-text white' href='#'
+          <li><a class='dropdown-trigger btn waves-effect waves-light border1 black-text white' href='#'
               data-target='dropdown1'>Polilibro<i class="material-icons right">menu_book</i></a></li>
           <!-- Dropdown Structure -->
           <ul id='dropdown1' class='dropdown-content'>
@@ -71,7 +87,7 @@
 
     <!--Menu para los contenidos en tiempo real-->
     <ul id="tabs-swipe-demo" class="tabs light-blue darken-4">
-      <li class="tab col s3"><a class="white-text active" href="#test-swipe-1">Bienvenida</a></li>
+      <li class="tab col s3"><a class="white-text" href="#test-swipe-1">Bienvenida</a></li>
       <li class="tab col s3"><a class="white-text" href="#test-swipe-2">Unidad de competencia</a></li>
       <li class="tab col s3"><a class="white-text" href="#test-swipe-3">Metodología</a></li>
       <li class="tab col s3"><a class="white-text" href="#test-swipe-4">Evaluación de los aprendizajes</a></li>
@@ -81,28 +97,135 @@
 
   <!--Contenidos principales de la página-->
   <section class="mainContent">
-    <div id="test-swipe-1" class="mainTabs col s12 grey blue-grey lighten-5">
-      <div>
-        <p>
+    <div id="test-swipe-1" class="mainTabs col s12 blue-grey lighten-4">
+      <div class="cardDesign white shadow2 border1">
+        <p class="textoTitulo">Bienvenida</p>
+        <p class="textoStandar">
           Recibe la más cordial bienvenida a este recurso didáctico digital (RDD) de la Unidad de Aprendizaje (UA) de
           Administración de Proyectos que se imparte en la Escuela Superior de Cómputo del Instituto Politécnico
           Nacional. Este RDD fue construido con el propósito de promover el aprendizaje autónomo, así como de facilitar,
           enriquecer y fortalecer los procesos de enseñanza-aprendizaje de la UA en cuestión en la modalidad
           escolarizada.
         </p>
-        <img src="../static/img/default.png" alt="">
-        <p>
-          Esperamos que las próximas semanas sean enriquecedoras de experiencias de aprendizaje, para lo cual es indispensable tener en cuenta algunos elementos clave tales como: el compromiso e interacción de los actores (participantes y facilitadores del aprendizaje), la conformación de un gran equipo de trabajo colaborativo y la realización de las actividades de aprendizaje de acuerdo con las especificaciones proporcionadas y en los tiempos establecidos.
+        <div class="defaultImage">
+          <div class="defaultImageContent">
+
+          </div>
+        </div>
+        <p class="textoStandar">
+          Esperamos que las próximas semanas sean enriquecedoras de experiencias de aprendizaje, para lo cual es
+          indispensable tener en cuenta algunos elementos clave tales como: el compromiso e interacción de los actores
+          (participantes y facilitadores del aprendizaje), la conformación de un gran equipo de trabajo colaborativo y
+          la realización de las actividades de aprendizaje de acuerdo con las especificaciones proporcionadas y en los
+          tiempos establecidos.
           Nuestra intención es que disfrutes esta experiencia educativa, ¡te deseamos el mayor de los éxitos!
           Para cualquier duda o comentario, en relación a este material, puedes contactarnos en:
           johernandezja@ipn.mx y jimenezg@ipn.mx
         </p>
       </div>
     </div>
-    <div id="test-swipe-2" class="mainTabs col s12 grey blue-grey lighten-5">Test 2</div>
-    <div id="test-swipe-3" class="mainTabs col s12 grey blue-grey lighten-5">Test 3</div>
-    <div id="test-swipe-4" class="mainTabs col s12 grey blue-grey lighten-5">Test 1</div>
-    <div id="test-swipe-5" class="mainTabs col s12 grey blue-grey lighten-5">Test 2</div>
+    <div id="test-swipe-2" class="mainTabs col s12 blue-grey lighten-4">
+      <div class="cardDesign white shadow2 border1">
+        <p class="textoTitulo">Metodología</p>
+        <p class="textoStandar">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+        </p>
+        <div class="defaultImage">
+          <div class="defaultImageContent">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="test-swipe-3" class="mainTabs col s12 blue-grey lighten-4">
+      <div class="cardDesign white shadow2 border1">
+        <p class="textoTitulo">Unidad de competencia</p>
+        <p class="textoStandar">
+          El propósito de la Unidad de Aprendizaje (UA) Administración de Proyectos es: formula el estudio
+          mercadológico, técnico y financiero de un proyecto de inversión, con base en la metodología de generación y
+          evaluación de proyectos. Para lograr el propósito planteado, la presente UA se abordará a partir de la
+          estrategia de aprendizaje orientada a proyectos así como del método heurístico.
+
+        </p>
+        <p class="textoStandar">
+          Las unidades temáticas que conforman esta UA son:
+        </p>
+        <ol>
+          <li class="textoList">Elementos conceptuales y preparación de la administración y evaluación de proyectos</li>
+          <li class="textoList">Estudio de mercado</li>
+          <li class="textoList">Estudio técnico</li>
+          <li class="textoList">Estudio administrativo y de organización del proyecto</li>
+          <li class="textoList">Estudio financiero</li>
+          <li class="textoList">Evaluación financiera e impacto social y ecológico del proyecto</li>
+        </ol>
+        <p class="textoStandar">
+          Con el fin de obtener mejores resultados en cuanto a tu autoaprendizaje, te recomendamos estudiar cada una de
+          las unidades temáticas en la secuencia en la que aparecen. Si deseas profundizar aún más en algún tema, te
+          sugerimos consultar la bibliografía detallada en el programa académico.
+        </p>
+        <div class="defaultImage">
+          <div class="defaultImageContent"></div>
+        </div>
+        <p class="textoStandar">
+          Este recurso didáctico digital (RDD) fue construido con el propósito de promover el aprendizaje autónomo, así
+          como de facilitar, enriquecer y fortalecer los procesos de enseñanza-aprendizaje de la UA en cuestión en la
+          modalidad escolarizada. Con el fin de obtener mejores resultados en cuanto a tu autoaprendizaje, te
+          recomendamos estudiar cada una de las unidades temáticas en la secuencia en la que aparecen en este RDD. Si
+          deseas profundizar aún más en algún tema, te sugerimos consultar la bibliografía detallada en el programa
+          académico. Para facilitar la navegación, en cada una de las unidades temáticas encontrarás una sección con los
+          siguientes botones:
+        </p>
+        <p class="textoStandar">
+          Evaluación de los aprendizajes, en donde puedes consultar aspectos de interés acerca de la evaluación y
+          acreditación de la Unidad de Aprendizaje. Estrategias de aprendizaje, se detallan las actividades, técnicas y
+          medios necesarias para el logro de los aprendizajes esperados. Recursos, en esta parte encontrarás lecturas
+          complementarias, ligas de videos y artículos de internet, así como presentaciones de los contenidos en power
+          point. Actividades de aprendizaje, en este botón podrás descargar las actividades de aprendizaje. En cada una
+          de las actividades se especifican: el propósito, las instrucciones, la ponderación en la calificación y la
+          indicación si debe trabajarse en forma individual o en equipo. La entrega de evidencias y su respectiva
+          retroalimentación se hará en las sesiones de clase. Desarrolla tu plan de negocio, aquí encontrarás el índice
+          del plan de negocio que desarrollarás, en equipo, a lo largo del semestre, mismo que entregarás como producto
+          final. Test ¿qué aprendiste?, con base en los conocimientos adquiridos, podrás contestar un test que te
+          ayudará a obtener retroalimentación y a reflexionar sobre el progreso de tu aprendizaje.
+        </p>
+        <p class="textoStandar">
+
+          En la parte inferior del RDD podrás consultar los contenidos por unidad temática, en donde encontrarás la
+          explicación de cada uno de los temas con apoyo de imágenes, cuadros, gráficas, organizadores gráficos y
+          diversos ejemplos para reforzar tu aprendizaje. Es importante destacar que, dentro del modal, al concluir la
+          lectura de algunos temas encontrarás un botón en donde también puedes descargar las actividades de
+          aprendizaje. Adicionalmente, antes de consultar los contenidos de cada una de las unidades temáticas podrás
+          visualizar el apartado titulado ¿de qué trata esta unidad? y así tener un panorama general de lo que se
+          abordará en la unidad temática en cuestión.
+        </p>
+      </div>
+    </div>
+    <div id="test-swipe-4" class="mainTabs col s12 blue-grey lighten-4">
+      <div class="cardDesign white shadow2 border1">
+        <p class="textoTitulo">Evaluación de los aprendizajes</p>
+        <p class="textoStandar">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+        </p>
+        <div class="defaultImage">
+          <div class="defaultImageContent">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="test-swipe-5" class="mainTabs col s12 blue-grey lighten-4">
+      <div class="cardDesign white shadow2 border1">
+        <p class="textoTitulo">Fuentes</p>
+        <p class="textoStandar">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+        </p>
+        <div class="defaultImage">
+          <div class="defaultImageContent">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 

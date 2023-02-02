@@ -11,7 +11,7 @@ html{
 
 /*Logo del ipn*/
 #icoNavIpn{
-    width: 80px;
+    width: 100%;
     height: 65px;
     background-image: url('../img/ipn_blanco.png');
     background-position: center;
@@ -20,7 +20,7 @@ html{
 }
 
 #icoNavEscom{
-    width: 80px;
+    width: 100%;
     height: 65px;
     background-image: url('../img/escom_blanco.png');
     background-position: center;
@@ -28,9 +28,37 @@ html{
     background-size: contain;
 }
 
-.border_1{
-    border-radius: 8px;
+.titleNavIpnContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.nav-superior{
+    background-color: #003964;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.hidenav-superior{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00345c;
+}
+
+.hidenav-superior > i{
+    font-size: 2rem;
+}
+
 
 li.indicator{
     height: 5px !important;
@@ -44,4 +72,65 @@ li.indicator{
 
 .mainTabs{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px 20px;
+}
+
+/*Card diseño*/
+.cardDesign{
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+}
+
+/*Textos*/
+.textoStandar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.textoTitulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.textoList{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.titleNavIpn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+/*Imagen por defecto*/
+.defaultImage{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.defaultImageContent{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-size: contain;
+    background-image: url('../img/default.png');
 }
