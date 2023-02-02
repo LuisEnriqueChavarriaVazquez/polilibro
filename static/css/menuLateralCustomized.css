@@ -57,6 +57,21 @@
     height: calc(100vh);
 }
 
+@media (min-width: 850px) {
+	.lateralUnityMenuSectionContainer::-webkit-scrollbar-track {
+		background-color: rgb(41, 41, 41)
+	}
+	
+	.lateralUnityMenuSectionContainer::-webkit-scrollbar {
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+	
+	.lateralUnityMenuSectionContainer::-webkit-scrollbar-thumb {
+		background-color: rgb(104, 104, 104);
+	}
+}
+
 .mainSectionMenu{
     margin: 0;
     height: 50px;
@@ -97,4 +112,19 @@
 #lateralUnityContent{
     overflow-y: scroll;
     height: calc(100vh);
+}
+
+@media (min-width: 850px) {
+	#lateralUnityContent::-webkit-scrollbar-track {
+		background-color: rgb(41, 41, 41)
+	}
+	
+	#lateralUnityContent::-webkit-scrollbar {
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+	
+	#lateralUnityContent::-webkit-scrollbar-thumb {
+		background-color: rgb(104, 104, 104);
+	}
 }

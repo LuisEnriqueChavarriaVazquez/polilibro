@@ -91,7 +91,7 @@
 }
 
 #a1:hover{
-    background-color: rgb(107, 52, 0);
+    background-color: rgb(255, 0, 0)
 }
 
 #a2:hover{
@@ -99,7 +99,7 @@
 }
 
 #a3:hover{
-    background-color: rgb(86, 0, 88);
+    background-color: rgb(0, 47, 255);
 }
 
 #a4:hover{
@@ -108,7 +108,7 @@
 
 
 #a5:hover{
-    background-color: rgb(99, 0, 5);
+    background-color: rgb(255, 0, 157);
 }
 
 @media (max-width: 800px) {

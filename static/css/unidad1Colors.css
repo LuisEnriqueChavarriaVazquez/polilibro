@@ -29,8 +29,8 @@
 .leftBorderOn{
     border-left: #631b05 10px solid !important;
     background-color: rgb(209, 209, 209);
-    font-weight: 800;
-    transition: all .4s ease;
+    font-weight: 700;
+    transition: all .1s ease;
 }
 
 /*Cards de la opciones para el menu*/
