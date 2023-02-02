@@ -15,5 +15,26 @@ def home():
 def polilibro():
     return render_template('polilibro.html')
 
+#Unidades del unidad1
+@app.route('/unidad1')
+def unidad1():
+    return render_template('unidad1.html')
+
+@app.route('/unidad2')
+def unidad2():
+    return render_template('unidad2.html')
+
+@app.route('/unidad3')
+def unidad3():
+    return render_template('unidad3.html')
+
+@app.route('/unidad4')
+def unidad4():
+    return render_template('unidad4.html')
+
+@app.route('/unidad5')
+def unidad5():
+    return render_template('unidad5.html')
+
 if __name__ == '__main__':
     app.run(port=5000,debug=True)

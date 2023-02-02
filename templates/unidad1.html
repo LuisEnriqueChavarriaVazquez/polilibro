@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Polilibro</title>
+    <title>Unidad 1</title>
     <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
 
     <!--Fonts-->
@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="../static/css/navCustomized.css">
     <link rel="stylesheet" href="../static/css/tabsCustomized.css">
     <link rel="stylesheet" href="../static/css/cardsCustomized.css">
+    <link rel="stylesheet" href="../static/css/menuLateralCustomized.css">
+
+    <!--Colores de la unidad-->
+    <link rel="stylesheet" href="../static/css/unidad1Colors.css">
 
     <!-- Compiled and minified JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -35,6 +39,7 @@
 
     <!--Scripts propios-->
     <script defer src="../static/js/hideSuperiorNav.js"></script>
+    <script defer src="../static/js/toggleMenuLateralUnity.js"></script>
 
 </head>
 
@@ -54,70 +59,31 @@
         </div>
         <!--Navbar principal-->
         <nav>
-            <div class="nav-wrapper light-blue darken-4">
+            <div class="nav-wrapper deep-orange darken-4" id="menuIconUnity">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
-                        class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='#!'>Inicio<i
-                                class="material-icons right">home</i></a></li>
-                </ul>
+                        class="material-icons" id="menuIconUnityContent">menu</i></a>
             </div>
         </nav>
-        
-        <ul id="mobile-demo" class="sidenav">
-            <li>
-                <div class="user-view" style="height: 150px;">
-                    <div class="background" style="height: 150px;">
-                        <img src="../static/img/escom_background.jpg" width="100%">
-                    </div>
-                    <a href="#"><span class="white-text name">Versión 1.0</span></a>
-                    <a href="#"><span class="white-text email">Instituto Politécnino Nacional</span></a>
-                </div>
-            </li>
-            <li><a href="#!"><i class="material-icons">home</i>Inicio</a></li>
-            <li><a href="#!"><i class="material-icons">menu_book</i>Polilibro</a></li>
-            <li><a href="#!"><i class="material-icons">help</i>Manual</a></li>
-            <li><a href="#!"><i class="material-icons">build</i>Requerimientos</a></li>
-            <li><a href="#!"><i class="material-icons">alternate_email</i>Contacto</a></li>
-        </ul>
     </section>
 
-    <!--Contenidos principales de la página-->
-    <section class="unitCardsContainerFather blue-grey lighten-4">
-        <section class="tituloSeleccionUnidades">
-            <p class="textoTitulo">Selección de unidades</p>
+
+    <section class="fullUnity blue-grey lighten-4">
+        <!--Contenidos principales de la unidad-->
+        <section id="lateralUnityMenuBackOne" class="lateralUnityMenuBackOne menuLateralWidthShow deep-orange lighten-4">
+            <section id="lateralUnityMenuBackTwo" class="lateralUnityMenuBackTwo menuLateralWidthShow deep-orange lighten-3">
+                <section id="lateralUnityMenuBackThree" class="lateralUnityMenuBackThree menuLateralWidthShow deep-orange lighten-2">
+                    <section id="lateralUnityMenuBackFour" class="lateralUnityMenuBackFour menuLateralWidthShow deep-orange lighten-1">
+                        <section id="lateralUnityMenu" class="lateralUnityMenu white">
+                            
+                        </section>
+                    </section>
+                </section>
+            </section>
         </section>
-        <section class="unitCardsContainer blue-grey lighten-4">
-            <a href="/unidad1" id="a1Link">
-                <div id="a1" class="cardUnit shadow2 border2">
-                    <p class="white-text textoTitulo">Unidad 1</p>
-                    <p class="white-text textoStandar">Subtitulo de la unidad</p>
-                </div>
-            </a>
-            <a href="/unidad2" id="a2Link">
-                <div id="a2" class="cardUnit shadow2 border2">
-                    <p class="white-text textoTitulo">Unidad 2</p>
-                    <p class="white-text textoStandar">Subtitulo de la unidad</p>
-                </div>
-            </a>
-            <a href="/unidad3" id="a3Link">
-                <div id="a3" class="cardUnit shadow2 border2">
-                    <p class="white-text textoTitulo">Unidad 3</p>
-                    <p class="white-text textoStandar">Subtitulo de la unidad</p>
-                </div>
-            </a>
-            <a href="/unidad4" id="a4Link">
-                <div id="a4" class="cardUnit shadow2 border2">
-                    <p class="white-text textoTitulo">Unidad 4</p>
-                    <p class="white-text textoStandar">Subtitulo de la unidad</p>
-                </div>
-            </a>
-            <a href="/unidad5" id="a5Link">
-                <div id="a5" class="cardUnit shadow2 border2">
-                    <p class="white-text textoTitulo">Unidad 5</p>
-                    <p class="white-text textoStandar">Subtitulo de la unidad</p>
-                </div>
-            </a>
+
+        <!--Contenidos principales de texto-->
+        <section class="lateralUnityContent blue-grey lighten-4">
+
         </section>
     </section>
 

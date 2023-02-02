@@ -1,0 +1,44 @@
+.fullUnity{
+    display: grid;
+    grid-template-columns: .6fr 2fr;
+    grid-template-rows: auto;
+}
+
+/*Menu lateral*/
+.menuLateralWidthShow{
+    width: 100%;
+}
+
+.menuLateralWidthHide{
+    width: 0%;
+}
+
+.lateralUnityMenuBackOne{
+    height: 100vh;
+    transition: all .6s ease-in-out;
+}
+
+.lateralUnityMenuBackTwo{
+    height: 100vh;
+    transition: all .5s ease-in-out;
+}
+
+.lateralUnityMenuBackThree{
+    height: 100vh;
+    transition: all .4s ease-in-out;
+}
+
+.lateralUnityMenuBackFour{
+    height: 100vh;
+    transition: all .3s ease-in-out;
+}
+
+.lateralUnityMenu{
+    height: 100vh;
+    transition: all .2s ease-in-out;
+}
+
+/*Menu de contenido*/
+.lateralUnityContent{
+
+}
