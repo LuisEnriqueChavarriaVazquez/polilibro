@@ -80,8 +80,28 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(0, 83, 151);
     background-blend-mode: darken;
+}
+
+#a1:hover{
+    background-color: rgb(107, 52, 0);
+}
+
+#a2:hover{
+    background-color: rgb(8, 97, 0);
+}
+
+#a3:hover{
+    background-color: rgb(86, 0, 88);
+}
+
+#a4:hover{
+    background-color: rgb(0, 105, 100);
+}
+
+
+#a5:hover{
+    background-color: rgb(99, 0, 5);
 }
 
 @media (max-width: 800px) {
