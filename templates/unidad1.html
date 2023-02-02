@@ -41,6 +41,7 @@
     <script defer src="../static/js/hideSuperiorNav.js"></script>
     <script defer src="../static/js/toggleMenuLateralUnity.js"></script>
     <script defer src="../static/js/menuSticky.js"></script>
+    <script defer src="../static/js/alternarVistas.js"></script>
 
 </head>
 
@@ -61,8 +62,14 @@
         <!--Navbar principal-->
         <nav id="menuStickyUnity">
             <div class="nav-wrapper deep-orange darken-4" id="menuIconUnity">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
-                        class="material-icons" id="menuIconUnityContent">close</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons"
+                        id="menuIconUnityContent">close</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a id="buttonList" class='btn waves-effect waves-light border1 deep-orange-text text-darken-4 white'>Lista<i
+                                class="material-icons right">view_list</i></a></li>
+                    <li><a id="buttonGrid" class='btn waves-effect waves-light border1 deep-orange-text text-darken-4 white'>Cuadricula<i
+                                class="material-icons right">grid_view</i></a></li>
+                </ul>
             </div>
         </nav>
     </section>
@@ -70,10 +77,14 @@
 
     <section class="fullUnity blue-grey lighten-4">
         <!--Contenidos principales de la unidad-->
-        <section id="lateralUnityMenuBackOne" class="lateralUnityMenuBackOne menuLateralWidthShow deep-orange lighten-4">
-            <section id="lateralUnityMenuBackTwo" class="lateralUnityMenuBackTwo menuLateralWidthShow deep-orange lighten-3">
-                <section id="lateralUnityMenuBackThree" class="lateralUnityMenuBackThree menuLateralWidthShow deep-orange lighten-2">
-                    <section id="lateralUnityMenuBackFour" class="lateralUnityMenuBackFour menuLateralWidthShow deep-orange lighten-1">
+        <section id="lateralUnityMenuBackOne"
+            class="lateralUnityMenuBackOne menuLateralWidthShow deep-orange lighten-4">
+            <section id="lateralUnityMenuBackTwo"
+                class="lateralUnityMenuBackTwo menuLateralWidthShow deep-orange lighten-3">
+                <section id="lateralUnityMenuBackThree"
+                    class="lateralUnityMenuBackThree menuLateralWidthShow deep-orange lighten-2">
+                    <section id="lateralUnityMenuBackFour"
+                        class="lateralUnityMenuBackFour menuLateralWidthShow deep-orange lighten-1">
                         <section id="lateralUnityMenu" class="lateralUnityMenu white">
                             <div id="lateralUnityMenuSectionContainer" class="lateralUnityMenuSectionContainer">
                                 <p class="mainSectionMenu leftBorderOn">1. Sección A</p>
@@ -95,19 +106,23 @@
                                 <p class="secondarySectionMenu leftBorderSecondary">3.2 Sección C.2</p>
                                 <p class="secondarySectionMenu leftBorderSecondary">3.3 Sección C.3</p>
                                 <hr>
-                                <div class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
                                     <i class="material-icons">auto_stories</i>
                                     <p>Material de apoyo</p>
                                 </div>
-                                <div class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
                                     <i class="material-icons">diversity_2</i>
                                     <p>Cierre de unidad temática</p>
                                 </div>
-                                <div class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
                                     <i class="material-icons">quiz</i>
                                     <p>Evaluación</p>
                                 </div>
-                                <div class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
+                                <div
+                                    class="cardOpcionesMenuLateral waves-effect waves-light blue-grey lighten-4 border2 shadow2">
                                     <i class="material-icons">format_quote</i>
                                     <p>Referencias</p>
                                 </div>
@@ -119,56 +134,65 @@
         </section>
 
         <!--Contenidos principales de texto-->
-        <section id="lateralUnityContent" class="lateralUnityContentSquare blue-grey lighten-4">
+        <section id="lateralUnityContent" class="lateralUnityContentList blue-grey lighten-4">
             <div class="cardDesign white shadow2 border1">
-                <p class="textoTitulo">Ejemplo 1</p>
+                <p class="textoTitulo">Texto título 1</p>
                 <p class="textoStandar">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
-                  consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat
-                  cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore
-                  minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique
-                  laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
                 </p>
                 <div class="defaultImage">
-                  <div class="defaultImageContent">
-        
-                  </div>
+                    <div class="defaultImageContent">
+
+                    </div>
                 </div>
-              </div>
+            </div>
             </div>
 
             <div class="cardDesign white shadow2 border1">
-                <p class="textoTitulo">Ejemplo 2</p>
+                <p class="textoTitulo">Texto título 2</p>
                 <p class="textoStandar">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
-                  consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat
-                  cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore
-                  minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique
-                  laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
                 </p>
                 <div class="defaultImage">
-                  <div class="defaultImageContent">
-        
-                  </div>
+                    <div class="defaultImageContent">
+
+                    </div>
                 </div>
-              </div>
+            </div>
             </div>
 
             <div class="cardDesign white shadow2 border1">
-                <p class="textoTitulo">Ejemplo 3</p>
+                <p class="textoTitulo">Texto título 3</p>
                 <p class="textoStandar">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
-                  consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae quaerat
-                  cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore
-                  minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus, similique
-                  laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati recusandae dignissimos
+                    consequuntur itaque assumenda voluptas dicta aspernatur iusto suscipit quas! Quidem iusto beatae
+                    quaerat
+                    cupiditate eum fuga omnis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    labore
+                    minima excepturi incidunt voluptatibus culpa expedita quod explicabo, cumque voluptatum accusamus,
+                    similique
+                    laboriosam magnam! Obcaecati harum nemo molestias adipisci quas?
                 </p>
                 <div class="defaultImage">
-                  <div class="defaultImageContent">
-        
-                  </div>
+                    <div class="defaultImageContent">
+
+                    </div>
                 </div>
-              </div>
+            </div>
             </div>
         </section>
     </section>

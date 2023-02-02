@@ -1,5 +1,4 @@
 //Botones del menu
-let menuIconUnity = document.getElementById('menuIconUnity');
 let menuIconUnityContent = document.getElementById('menuIconUnityContent');
 
 
@@ -15,7 +14,7 @@ let fullUnity = document.getElementsByClassName('fullUnity');
 let lateralUnityMenuSectionContainer = document.getElementById('lateralUnityMenuSectionContainer');
 
 //Click al boton
-menuIconUnity.addEventListener('click', () => {
+menuIconUnityContent.addEventListener('click', () => {
     if(menuIconUnityContent.textContent !== 'menu'){
         menuIconUnityContent.textContent = 'menu';
         lateralUnityMenuBackOne.classList.add('menuLateralWidthHide');
@@ -31,7 +30,7 @@ menuIconUnity.addEventListener('click', () => {
         lateralUnityMenu.classList.remove('menuLateralWidthShow');
 
         fullUnity[0].classList.add('fullUnityComplete');
-        lateralUnityMenuSectionContainer.setAttribute('display', 'none')
+        lateralUnityMenuSectionContainer.classList.add('')
     }else{
         menuIconUnityContent.textContent = 'close';
         lateralUnityMenuBackOne.classList.remove('menuLateralWidthHide');
