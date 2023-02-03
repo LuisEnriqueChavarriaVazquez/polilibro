@@ -1,0 +1,19 @@
+.containerManual{
+    padding: 20px;
+}
+
+.sectionPanelManual{
+    top: 100px;
+}
+
+.buttonMenuMobile{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
