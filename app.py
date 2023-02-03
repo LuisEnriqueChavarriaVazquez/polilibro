@@ -20,6 +20,10 @@ def polilibro():
 def contacto():
     return render_template("contacto.html")
 
+@app.route('/requerimientos')
+def requerimientos():
+    return render_template('requerimientos.html')
+
 #Unidades del unidad1
 @app.route('/unidad1')
 def unidad1():
