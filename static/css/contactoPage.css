@@ -1,0 +1,36 @@
+.nav-wrapper a img{
+    width: 50px;
+    height: 60px;
+    padding: 5px 5px;
+}
+
+#header{
+    height:80px;
+    background-color:#411530;
+}
+
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+#contactoDocentes{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    height: 300px;
+}
+
+#index-banner h1{
+    color:#F9F5E7;
+}
+#download-button{
+    background-color: #4C0033;
+}

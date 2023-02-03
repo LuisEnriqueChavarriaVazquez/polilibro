@@ -15,6 +15,11 @@ def home():
 def polilibro():
     return render_template('polilibro.html')
 
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
+
 #Unidades del unidad1
 @app.route('/unidad1')
 def unidad1():
