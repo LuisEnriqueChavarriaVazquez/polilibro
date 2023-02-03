@@ -50,5 +50,10 @@ def unidad5():
 def glosario():
     return render_template('glosario.html')
 
+#Manual
+@app.route('/manual')
+def manual():
+    return render_template('manual.html')
+
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
