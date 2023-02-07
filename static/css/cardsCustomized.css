@@ -34,7 +34,7 @@
     grid-template-areas: 
         "a1 a2"
         "a3 a4"
-        "a5 a5"
+        "a5 a6"
     ;
     gap: 30px;
     padding: 30px;
@@ -69,7 +69,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color:#1C2833;
     background-blend-mode: darken;
 
     padding: 30px 20px 20px 20px;
@@ -91,7 +91,7 @@
 }
 
 #a1:hover{
-    background-color: rgb(255, 0, 0)
+    background-color: rgb(255, 0, 0);
 }
 
 #a2:hover{
