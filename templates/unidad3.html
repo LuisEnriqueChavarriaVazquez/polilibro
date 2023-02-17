@@ -60,8 +60,6 @@
         <!--Navbar principal-->
         <nav id="menuStickyUnity">
             <div class="nav-wrapper yellow-low" id="menuIconUnity">
-                <a data-target="mobile-demo" class="hide-on-med-and-down sidenav-trigger show-on-large"><i class="material-icons"
-                        id="menuIconUnityContent">close</i></a>
                 <a class="brand-logo titleUnity">Unidad 3</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a id="buttonList"
@@ -81,13 +79,13 @@
     <section class="fullUnity blue-grey lighten-4">
         <!--Contenidos principales de la unidad-->
         <section id="lateralUnityMenuBackOne"
-            class="lateralUnityMenuBackOne menuLateralWidthShow yellow lighten-4">
+            class="lateralUnityMenuBackOne menuLateralWidthShow" style="background-color: #ebaceb;">
             <section id="lateralUnityMenuBackTwo"
-                class="lateralUnityMenuBackTwo menuLateralWidthShow yellow lighten-3">
+                class="lateralUnityMenuBackTwo menuLateralWidthShow" style="background-color: #ad7ead;">
                 <section id="lateralUnityMenuBackThree"
-                    class="lateralUnityMenuBackThree menuLateralWidthShow yellow lighten-2">
+                    class="lateralUnityMenuBackThree menuLateralWidthShow" style="background-color: #755675;">
                     <section id="lateralUnityMenuBackFour"
-                        class="lateralUnityMenuBackFour menuLateralWidthShow yellow lighten-1">
+                        class="lateralUnityMenuBackFour menuLateralWidthShow" style="background-color: #4d394d;">
                         <section id="lateralUnityMenu" class="lateralUnityMenu white">
                             <div id="lateralUnityMenuSectionContainer" class="lateralUnityMenuSectionContainer">
                                 <p contador="1" class="rememberStateUnit1 mainSectionMenu leftBorder">1. Sección A</p>
@@ -260,9 +258,13 @@
         </div>
     </footer>
 
-    <a href="#" data-target="slide-out" class="border5 shadow2 white-text waves-effect waves-light yellow darken-4 buttonMenuMobile sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
-
-
+    <a href="#" data-target="slide-out" class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobile sidenav-trigger hide-on-large-only"
+    style="background-color: #7a5b7a;"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="mobile-demo" 
+    class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobile sidenav-trigger hide-on-med-and-down" 
+    style="background-color: #4d394d; width: 54px; height: 54px;">
+        <i class="material-icons" id="menuIconUnityContent">close</i>
+    </a>
 
 </body>
 

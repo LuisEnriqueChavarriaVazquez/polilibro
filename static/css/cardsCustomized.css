@@ -29,100 +29,60 @@
 
 .unitCardsContainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-        "a1 a2"
-        "a3 a4"
-        "a5 a6"
-    ;
     gap: 30px;
-    padding: 30px;
+    padding: 30px 150px;
     width: 100%;
     height: auto;
 }
 
-#a1Link{
-    grid-area: a1;
-}
-
-#a2Link{
-    grid-area: a2;
-}
-
-#a3Link{
-    grid-area: a3;
-}
-
-#a4Link{
-    grid-area: a4;
-}
-
-#a5Link{
-    grid-area: a5;
-}
-
 .cardUnit{
     height: 160px;
-    background-image: url('../img/backCard.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color:#1C2833;
-    background-blend-mode: darken;
+    background-color: #e2e2e2;
 
-    padding: 30px 20px 20px 20px;
+    padding: 25px 20px 20px 20px;
 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 
-    transition: all .4s ease;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
-.cardUnit:hover{
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-}
+#a1{border-bottom: 20px #9BCFB6 solid;}
+#a2{border-bottom: 20px #b87c82 solid;}
+#a3{border-bottom: 20px #9b719b solid;}
+#a4{border-bottom: 20px #a3c5c4 solid;}
+#a5{border-bottom: 20px #b5c1eb solid;}
 
 #a1:hover{
-    background-color: rgb(255, 0, 0);
-}
-
+    padding: 10px 20px 20px 20px;
+    border-bottom: 40px #335546 solid;}
 #a2:hover{
-    background-color: rgb(8, 97, 0);
-}
-
+    padding: 10px 20px 20px 20px;
+    border-bottom: 40px #643f42 solid;}
 #a3:hover{
-    background-color: rgb(255, 238, 0);
-}
-
+    padding: 10px 20px 20px 20px;
+    border-bottom: 40px #5f405f solid;}
 #a4:hover{
-    background-color: rgb(0, 105, 100);
-}
-
-
+    padding: 10px 20px 20px 20px;
+    border-bottom: 40px #2a4645 solid;}
 #a5:hover{
-    background-color: rgb(255, 0, 157);
+    padding: 10px 20px 20px 20px;
+    border-bottom: 40px #2c344d solid;}
+
+@media (max-width: 1200px) {
+	.unitCardsContainer{
+        gap: 20px;
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 @media (max-width: 800px) {
-	.unitCardsContainer{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "a1"
-            "a2"
-            "a3"
-            "a4"
-            "a5"
-        ;
+    .unitCardsContainer{
         gap: 20px;
         padding: 0 20px 20px 20px;
     }
