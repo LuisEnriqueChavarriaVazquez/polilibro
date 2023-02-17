@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 .nav-wrapper a img{
     width: 50px;
     height: 60px;
@@ -32,5 +34,12 @@
     color:#F9F5E7;
 }
 #download-button{
-    background-color: #4C0033;
+    background-color: #00337C;
+    border-radius: 10px;
+}
+
+h2{
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
