@@ -17,11 +17,7 @@
 }
 
 .leftBorderSecondary{
-<<<<<<< HEAD
     border-left: #9BCFB6 10px solid !important;
-=======
-    border-left: #FF597B 10px solid !important;
->>>>>>> 0d3483b1c81b04bd89ce16869defd034b44ce03d
     transition: all .2s ease;
 }
 

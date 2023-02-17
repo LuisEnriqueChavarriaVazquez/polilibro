@@ -1,5 +1,5 @@
 .nav-superior{
-    background-color: #1F8A70 !important;
+    background-color: #a0686e !important;
 }
 
 .hidenav-superior{
@@ -7,27 +7,27 @@
 }
 
 .footerDesign{
-    border-bottom: #3C6255 30px solid !important;
+    border-bottom: #a0686e 30px solid !important;
 }
 
 .leftBorder{
-    border-left: #3C6255 10px solid !important;
+    border-left: #724b4f 10px solid !important;
     transition: all .2s ease;
     font-weight: 600;
 }
 
 .leftBorderSecondary{
-    border-left: #61876E 10px solid !important;
+    border-left: #b87c82 10px solid !important;
     transition: all .2s ease;
 }
 
 .leftBorder:hover, .leftBorderSecondary:hover{
     background-color: rgb(202, 202, 202);
-    border-left: #3C6255 20px solid !important;
+    border-left: #583b3e 20px solid !important;
 }
 
 .leftBorderOn{
-    border-left: #3C6255 10px solid !important;
+    border-left: #724b4f 10px solid !important;
     background-color: rgb(209, 209, 209);
     font-weight: 700;
     transition: all .1s ease;
@@ -68,5 +68,5 @@
 }
 
 .green-low{
-    background-color: #61876E;
+    background-color: #805458;
 }
