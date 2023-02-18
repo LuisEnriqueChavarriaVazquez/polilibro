@@ -2,117 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
-  <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Polilibro</title>
+    <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="../static/fonts/roboto.css">
+    <!--Fonts-->
+    <link rel="stylesheet" href="../static/fonts/roboto.css">
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ownStyles.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/ownStyles.css">
-  <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script defer src="../static/js/activateComponentsMaterialize.js"></script>
+    <!--Componentes personalizados-->
+    <link rel="stylesheet" href="../static/css/shadowsCustomized.css">
+    <link rel="stylesheet" href="../static/css/bordersCustomized.css">
+    <link rel="stylesheet" href="../static/css/scrollBarCustomized.css">
+    <link rel="stylesheet" href="../static/css/footerCustomized.css">
+    <link rel="stylesheet" href="../static/css/botonPoliLibro.css">
+    <link rel="stylesheet" href="../static/css/defaultImage.css">
+    <link rel="stylesheet" href="../static/css/textosCustomized.css">
+    <link rel="stylesheet" href="../static/css/navCustomized.css">
+    <link rel="stylesheet" href="../static/css/tabsCustomized.css">
+    <link rel="stylesheet" href="../static/css/cardsCustomized.css">
+    <link rel="stylesheet" href="../static/css/contactoPage.css">
 
-  <link rel="stylesheet" href="{{url_for('static',filename='css/contactoPage.css')}}">
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="../static/js/activateComponentsMaterialize.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="../static/js/hideSuperiorNav.js"></script>
 
 </head>
 
 <body>
-  <nav>
-    <div class="nav-wrapper light-blue darken-4">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='/polilibro'>Polilibro<i
-              class="material-icons right">menu_book</i></a></li>
-        <li><a class='btn waves-effect waves-light border1 white-text blue darken-4' href='/'>Inicio<i
-              class="material-icons right">home</i></a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <ul id="mobile-demo" class="sidenav">
-    <li>
-      <div class="user-view" style="height: 150px;">
-        <div class="background" style="height: 150px;">
-          <img src="../static/img/escom_background.jpg" width="100%">
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior" id="nav-superior">
+            <div id="icoNavIpn"></div>
+            <div class="titleNavIpnContainer">
+                <p class="titleNavIpn white-text">Polilibro Académico de Finanzas Empresariales</p>
+            </div>
+            <div id="icoNavEscom"></div>
         </div>
-        <a href="#"><span class="white-text name">Versión 1.0</span></a>
-        <a href="#"><span class="white-text email">Instituto Politécnico Nacional</span></a>
-      </div>
-    </li>
-    <li><a href="/"><i class="material-icons">home</i>Inicio</a></li>
-    <li><a href="/polilibro"><i class="material-icons">menu_book</i>Polilibro</a></li>
-  </ul>
+        <!-- <div id="expandButton" class="hidenav-superior waves-effect waves-light">
+            <i id="expandIcon" class="material-icons white-text">expand_less</i>
+        </div> -->
+        <!--Navbar principal-->
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="/" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">arrow_back</i></a>
+                <a class="brand-logo titleUnity">Contacto</a>
+            </div>
+        </nav>
+    </section>
 
-  <div id="index-banner" class="parallax-container" style="min-height:450px;">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center">Escuela Superior de Cómputo</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Materia de administración de proyectos</h5>
+    <section>
+        <div class="mainTabs col s12 blue-grey lighten-4">
+            <div class="cardDesign white shadow2 border1">
+                <p class="textoTitulo">Contacto</p>
+                <section class="contactContainer">
+                    <div class="contactTeacher shadow2">
+                        <div>
+                            <img src="../static/img/Eduardo.jpeg" class="contactPhoto">
+                        </div>
+                        <div class="dataContainerContact">
+                            <p class="contactName textoTitulo">Nombre del docente</p>
+                            <p class="contactMail">Correo electrónico</p>
+                        </div>
+                    </div>
+                    <div class="contactTeacher shadow2">
+                        <div>
+                            <img src="../static/img/Josefina.jpeg" class="contactPhoto">
+                        </div>
+                        <div class="dataContainerContact">
+                            <p class="contactName textoTitulo">Nombre del docente</p>
+                            <p class="contactMail">Correo electrónico</p>
+                        </div>
+                    </div>
+                    <div class="contactTeacher shadow2">
+                        <div>
+                            <img src="../static/img/Yasmin.jpeg" class="contactPhoto">
+                        </div>
+                        <div class="dataContainerContact">
+                            <p class="contactName textoTitulo">Nombre del docente</p>
+                            <p class="contactMail">Correo electrónico</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect">Ver más</a>
+    </section>
+
+    <footer class="footerDesign blue-grey lighten-3">
+        <div class="footerContainerOne">
+            <p class="textoFooter">
+                Recurso Didáctico Digital Unidad X: métodos de evaluación de proyectos de inversión de la UA Finanzas
+                Empresariales por M. en A. Eduardo Rodríguez Flores, M. en C. Josefina Hernández Jaime & Dra. Yasmín
+                Ivette
+                Jiménez Galán se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0
+                Internacional.
+            </p>
+            <a href="https://link_ejemplo_pagina"
+                class="footerLink textoFooter blue-grey lighten-4 shadow2 border1 blue-text text-darken-2">
+                Repositorio de la obra https://link_ejemplo_pagina.
+            </a>
+            <div class="iconCreativeContainer">
+                <div class="iconCreative"></div>
+            </div>
         </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="{{url_for('static',filename='img/escom_background.jpg')}}"
-        alt="Unsplashed background img 1"></div>
-  </div>
-
-
-  <div class="container">
-    <div id="contactoDocentes" class="row">
-      <div class="col s12 m6 l4"><h2>Josefina Hérnandez Jaime</h2></div>
-      <div class="col s12 m6 l4"><h2>Profe 2</h2></div>
-      <div class="col s12 m6 l4"><h2>Profe 3</h2></div>
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Más cosas estan por venir</h5>
+        <div class="footerContainerTwo">
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Manual<i
+                    class="material-icons right">help</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Requerimientos<i
+                    class="material-icons right">build</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Contacto<i
+                    class="material-icons right">alternate_email</i></a>
         </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="{{url_for('static',filename='img/background2.jpg')}}"
-        alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Leer más</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
-            nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies
-            eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
-            pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed.
-            Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
-            eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
+    </footer>
 
 
-  <script defer src="{{url_for('static',filename='js/initParallax.js')}}"></script>
 
 </body>
 

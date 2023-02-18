@@ -1,45 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-.nav-wrapper a img{
-    width: 50px;
-    height: 60px;
-    padding: 5px 5px;
+.contactContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 50px 150px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#header{
-    height:80px;
-    background-color:#411530;
+.contactTeacher{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
 }
 
-
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255,255,255,.9);
+.contactTeacher:hover{
+    background-color: #e4e4e4;
+    color: #000;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-.parallax-container .section {
+.contactPhoto{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+.dataContainerContact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 20px 15px 20px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
     width: 100%;
 }
 
-#contactoDocentes{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    height: 300px;
+.contactName{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
-#index-banner h1{
-    color:#F9F5E7;
-}
-#download-button{
-    background-color: #00337C;
-    border-radius: 10px;
-}
 
-h2{
-    font-size:18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+.contactMail{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
 }

@@ -26,7 +26,7 @@
 }
 
 .nav-superior{
-    background-color: #003964;
+    background-color: #8d6e5a;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto;

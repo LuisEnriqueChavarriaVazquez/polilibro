@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 2fr .5fr;
     grid-template-rows: auto;
-    border-bottom: #00345c 30px solid;
+    border-bottom: #362a23 30px solid;
     gap: 40px;
 }
 
