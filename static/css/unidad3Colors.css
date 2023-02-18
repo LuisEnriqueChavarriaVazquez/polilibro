@@ -22,6 +22,13 @@
     border-left: #4d394d 20px solid !important;
 }
 
+.activeLinkOptionsContent{
+    background-color: #886388;
+    border-left: #5f455f 20px solid !important;
+    color: #fff;
+    font-weight: 600;
+}
+
 .leftBorderOn{
     border-left: #745474 10px solid !important;
     background-color: rgb(209, 209, 209);
