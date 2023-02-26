@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, flash, abort
+from flask import Flask, render_template, redirect, url_for, flash, abort, request
 from flask_ckeditor import CKEditor
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
@@ -76,8 +76,8 @@ class Concepto(db.Model):
     definicion=db.Column(db.String(250), nullable=False)
     autor_id=db.Column(db.Integer,db.ForeignKey("docentes.id"))
 
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 
 @app.route('/',methods=['GET','POST'])
@@ -127,6 +127,60 @@ def glosario():
 @app.route('/manual')
 def manual():
     return render_template('manual.html')
+
+#para registrar un usuario
+@app.route("/registro", methods=["GET","POST"])
+def registro():
+    if request.method=="POST":
+        nombre=request.form["Name"]
+        correo=request.form["Email"]
+        password=request.form["Password"]
+
+        if Docente.query.filter_by(email=correo).first():
+            flash("Ya hay alguien registrado con ese email, intenta logearte!")
+            return redirect(url_for("login"))
+
+        nuevo_docente=Docente(
+            email=correo,
+            nombre=nombre,
+            password=generate_password_hash(password,method="pbkdf2:sha256",salt_length=8)
+        )
+
+        db.session.add(nuevo_docente)
+        db.session.commit()
+
+        login_user(nuevo_docente)
+
+        return redirect(url_for("panel_docente"))
+
+    return render_template("registro.html")
+
+
+#para logearse como docente
+@app.route('/login',methods=["GET","POST"])
+def login():
+    
+    if request.method=="POST":
+        email = request.form["Email"]
+        password = request.form["Password"]
+
+        user = Docente.query.filter_by(email=email).first()
+        if user:
+            if check_password_hash(user.password,password):
+                login_user(user)
+                return redirect(url_for("panel_docente",name=user.nombre))
+            else:
+                flash("Correo o password incorrectos, intenta de nuevo!")
+                return redirect(url_for("login"))
+        else:
+            flash("Ese email no esta registrado, intenta de nuevo!")
+            return redirect(url_for("login"))
+    return render_template("login.html",current_user=current_user)
+
+#para el panel de administración del docente
+@app.route("/panel_docente",methods=["GET","POST"])
+def panel_docente():
+    return render_template("panel_docente.html")
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)

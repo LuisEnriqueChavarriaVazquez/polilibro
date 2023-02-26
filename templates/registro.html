@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="../static/fonts/roboto.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ownStyles.css">
+
+    <!--Componentes personalizados-->
+    <link rel="stylesheet" href="../static/css/shadowsCustomized.css">
+    <link rel="stylesheet" href="../static/css/bordersCustomized.css">
+    <link rel="stylesheet" href="../static/css/scrollBarCustomized.css">
+    <link rel="stylesheet" href="../static/css/footerCustomized.css">
+    <link rel="stylesheet" href="../static/css/botonPoliLibro.css">
+    <link rel="stylesheet" href="../static/css/defaultImage.css">
+    <link rel="stylesheet" href="../static/css/textosCustomized.css">
+    <link rel="stylesheet" href="../static/css/navCustomized.css">
+    <link rel="stylesheet" href="../static/css/tabsCustomized.css">
+    <link rel="stylesheet" href="../static/css/cardsCustomized.css">
+    <link rel="stylesheet" href="../static/css/contactoPage.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="../static/js/activateComponentsMaterialize.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="../static/js/hideSuperiorNav.js"></script>
+
+</head>
+
+<body>
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior" id="nav-superior">
+            <div id="icoNavIpn"></div>
+            <div class="titleNavIpnContainer">
+                <p class="titleNavIpn white-text">Polilibro Académico de Finanzas Empresariales</p>
+            </div>
+            <div id="icoNavEscom"></div>
+        </div>
+        <!-- <div id="expandButton" class="hidenav-superior waves-effect waves-light">
+            <i id="expandIcon" class="material-icons white-text">expand_less</i>
+        </div> -->
+        <!--Navbar principal-->
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="/" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">arrow_back</i></a>
+                <a class="brand-logo titleUnity">Registro</a>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="mainTabs col s12 blue-grey lighten-4">
+            <div class="cardDesign white shadow2 border1">
+                <p class="textoTitulo">Sign up docente</p>
+                <form class="col s4" method="post" action="/registro">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="Name" type="text" class="validate">
+                            <label for="Name">Nombre</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input name="Email" type="email" class="validate">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input name="Password" type="password" class="validate">
+                            <label for="Password">Password</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <button type="submit" class="waves-effect waves-green btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footerDesign blue-grey lighten-3">
+        <div class="footerContainerOne">
+            <p class="textoFooter">
+                Recurso Didáctico Digital Unidad X: métodos de evaluación de proyectos de inversión de la UA Finanzas
+                Empresariales por M. en A. Eduardo Rodríguez Flores, M. en C. Josefina Hernández Jaime & Dra. Yasmín
+                Ivette
+                Jiménez Galán se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0
+                Internacional.
+            </p>
+            <a href="https://link_ejemplo_pagina"
+                class="footerLink textoFooter blue-grey lighten-4 shadow2 border1 blue-text text-darken-2">
+                Repositorio de la obra https://link_ejemplo_pagina.
+            </a>
+            <div class="iconCreativeContainer">
+                <div class="iconCreative"></div>
+            </div>
+        </div>
+        <div class="footerContainerTwo">
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Manual<i
+                    class="material-icons right">help</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Requerimientos<i
+                    class="material-icons right">build</i></a>
+            <a class='btn waves-effect waves-light border1 white-text blue-grey darken-4' href='#!'>Contacto<i
+                    class="material-icons right">alternate_email</i></a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
