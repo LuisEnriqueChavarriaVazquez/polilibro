@@ -8,3 +8,9 @@ html{
     padding: 0;
     margin: 0;
 }
+
+.error_signup{
+    background-color:#b94e4e;
+    color: white;
+    text-align: center;
+}

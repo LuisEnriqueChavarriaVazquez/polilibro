@@ -138,7 +138,7 @@ def registro():
 
         if Docente.query.filter_by(email=correo).first():
             flash("Ya hay alguien registrado con ese email, intenta logearte!")
-            return redirect(url_for("login"))
+            return redirect(url_for("registro"))
 
         nuevo_docente=Docente(
             email=correo,
