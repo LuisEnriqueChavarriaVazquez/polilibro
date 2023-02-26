@@ -9,7 +9,7 @@ html{
     margin: 0;
 }
 
-.error_signup{
+.error_msg{
     background-color:#b94e4e;
     color: white;
     text-align: center;

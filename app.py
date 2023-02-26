@@ -168,7 +168,7 @@ def login():
         if user:
             if check_password_hash(user.password,password):
                 login_user(user)
-                return redirect(url_for("panel_docente",name=user.nombre))
+                return redirect(url_for("panel_docente"))
             else:
                 flash("Correo o password incorrectos, intenta de nuevo!")
                 return redirect(url_for("login"))
@@ -180,7 +180,7 @@ def login():
 #para el panel de administración del docente
 @app.route("/panel_docente",methods=["GET","POST"])
 def panel_docente():
-    return render_template("panel_docente.html")
+    return render_template("panel_docente.html",current_user=current_user)
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
